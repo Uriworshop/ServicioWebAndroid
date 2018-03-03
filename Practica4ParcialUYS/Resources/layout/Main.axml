@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cinema">
+    <TextView
+        android:text="Cinemas Saury"
+        android:id="@+id/lblTitulo"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80.0dp" />
+    <ViewFlipper
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/ImagenesCar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/uno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/castillo2" />
+        <ImageView
+            android:id="@+id/dos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/diablo2" />
+        <ImageView
+            android:id="@+id/tres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/donnie2" />
+        <ImageView
+            android:id="@+id/cuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/intocables2" />
+        <ImageView
+            android:id="@+id/cinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/mariposa2" />
+        <ImageView
+            android:id="@+id/seis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/naranja2" />
+        <ImageView
+            android:id="@+id/siete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/wolve2" />
+    </ViewFlipper>
+    <TextView
+        android:text="Cartelera"
+        android:id="@+id/lblCartelera"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120.0dp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="118.0dp"
+        android:layout_marginBottom="10.0dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/scrollView1">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridLayout1"
+            android:columnCount="3"
+            android:rowCount="10"
+            android:padding="15dp">
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/donnie"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="30.0dp"
+                android:layout_marginRight="30.0dp"
+                android:layout_marginLeft="14dp" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/mariposa" />
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="@drawable/diablo" />
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="14dp"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="30.0dp"
+                android:layout_marginBottom="30.0dp"
+                android:background="@drawable/castillo" />
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageButton5"
+                android:background="@drawable/intocables" />
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="@drawable/naranja" />
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="30.0dp"
+                android:layout_marginBottom="30.0dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/ventajas" />
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="@drawable/requim" />
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="@drawable/outta" />
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/wolver" />
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="14dp" />
+        </GridLayout>
+    </ScrollView>
+</GridLayout>

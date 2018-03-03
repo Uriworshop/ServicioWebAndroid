@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A107BC8F-10A2-4D72-A537-F6427D7BBAF3}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Practica4ParcialUYS</RootNamespace>
+    <AssemblyName>Practica4ParcialUYS</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Datos.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Web References\SitioCine\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ServiCineSql\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+    <None Include="Web References\SitioCine\ServiCine.wsdl" />
+    <None Include="Web References\SitioCine\ServiCine.disco" />
+    <None Include="Web References\SitioCine\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ServiCineSql\Service.disco" />
+    <None Include="Web References\ServiCineSql\Service.wsdl" />
+    <None Include="Web References\ServiCineSql\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\nj.png" />
+    <AndroidResource Include="Resources\layout\Rese.axml" />
+    <AndroidResource Include="Resources\drawable\cinema.jpg" />
+    <AndroidResource Include="Resources\drawable\fondillo.jpg" />
+    <AndroidResource Include="Resources\drawable\Fondillo2.jpg" />
+    <AndroidResource Include="Resources\anim\Fade_in.axml" />
+    <AndroidResource Include="Resources\anim\Fade_put.axml" />
+    <AndroidResource Include="Resources\drawable\Castillo.png" />
+    <AndroidResource Include="Resources\drawable\Diablo.png" />
+    <AndroidResource Include="Resources\drawable\Donnie.png" />
+    <AndroidResource Include="Resources\drawable\Intocables.png" />
+    <AndroidResource Include="Resources\drawable\Mariposa.png" />
+    <AndroidResource Include="Resources\drawable\Naranja.png" />
+    <AndroidResource Include="Resources\drawable\Outta.png" />
+    <AndroidResource Include="Resources\drawable\Requim.png" />
+    <AndroidResource Include="Resources\drawable\Ventajas.png" />
+    <AndroidResource Include="Resources\drawable\Wolver.png" />
+    <AndroidResource Include="Resources\drawable\pudina.jpeg" />
+    <AndroidResource Include="Resources\drawable\Castillo2.png" />
+    <AndroidResource Include="Resources\drawable\Diablo2.png" />
+    <AndroidResource Include="Resources\drawable\Donnie2.png" />
+    <AndroidResource Include="Resources\drawable\Intocables2.png" />
+    <AndroidResource Include="Resources\drawable\Mariposa2.png" />
+    <AndroidResource Include="Resources\drawable\Naranja2.png" />
+    <AndroidResource Include="Resources\drawable\Ventajas2.png" />
+    <AndroidResource Include="Resources\drawable\Wolve2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\anim\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.96:8080/ServiCine.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SitioCine</RelPath>
+      <UpdateFromURL>http://192.168.1.96:8080/ServiCine.asmx</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.1.145:210/">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ServiCineSql</RelPath>
+      <UpdateFromURL>http://192.168.1.145:210/</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
